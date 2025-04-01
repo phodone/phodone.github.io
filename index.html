@@ -6,42 +6,73 @@
     <title>Welcome to Phodone</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Helvetica Neue', sans-serif;
             display: flex;
             justify-content: center;
             align-items: center;
             height: 100vh;
             margin: 0;
             text-align: center;
-            background-color: #293133;
+            background-color: #191919;
             color: #D6D6D4;
         }
         .container {
             display: flex;
             flex-direction: column;
             align-items: center;
+            padding: 20px;
+            max-width: 600px;
+            width: 100%;
+            text-align: center;
+        }
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            letter-spacing: 1px;
+            font-weight: bold;
+            color: #f4f4f4;
+            text-transform: uppercase;
+            text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
         }
         img {
             max-width: 200px;  /* Ideal logo size */
             width: 100%;
             height: auto;
-            margin-bottom: 20px;
+            margin-bottom: 30px;
+            border-radius: 20px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+        }
+        p {
+            margin: 10px 0;
+            font-size: 1.1rem;
         }
         a {
             text-decoration: none;
-            color: #007bff;
-            font-size: 16px;
-            margin-top: 10px;
+            color: #1E90FF;  /* A more vibrant blue */
+            font-size: 1.1rem;
+            font-weight: 600;
+            transition: color 0.3s ease, transform 0.3s ease;
         }
         a:hover {
             text-decoration: underline;
+            color: #00BFFF;
+            transform: translateY(-2px);  /* Subtle hover effect */
+        }
+        /* Optional: Add a subtle fade-in effect for the page */
+        body {
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            0% { opacity: 0; }
+            100% { opacity: 1; }
         }
     </style>
 </head>
 <body>
     <div class="container">
         <h1>Phodone App</h1>
-        <img src="logo.png" alt="Phodone Logo">
+        <img src="assets/logo.png" alt="Phodone Logo">
         <p><a href="/privacy-policy.html">Privacy Policy</a></p>
         <p><a href="/terms-of-service.html">Terms of Service</a></p>
     </div>
